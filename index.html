@@ -19,7 +19,7 @@
 			// use a timeout to ensure redirect if GA fails to load
 			// must use gtag() as ga() is from old analytics.js library
 			gtag('event', 'pageview', {'event_callback': redirect});
-			setTimeout(redirect, 300);
+			setTimeout(redirect, 500);
 			function redirect() {
 				window.location = 'https://www.amazon.com/handmade/DesignsByCatz';
 			}
